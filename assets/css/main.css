@@ -1474,7 +1474,6 @@ section {
   margin-right: 8px;
   color: var(--color-primary);
 }
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1482,9 +1481,7 @@ section {
   width: 100%;
   min-height: 50vh;
   /* background-color: var(--color-secondary); */
-  /* background-image: linear-gradient(rgba(15, 15, 15, 0.7), rgb(1, 10, 26)), url(assets/img/pexels-photo-7658369.jpg) center center; */
-  background-image: linear-gradient(rgba(15, 15, 15, 0.7), rgba(1, 10, 26)), url(../img/pexels-photo-7658369.jpg);
-    
+  background: linear-gradient(rgba(15, 15, 15, 0.7), rgb(1, 10, 26)), url("https://images.pexels.com/photos/7658369/pexels-photo-7658369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center center;
   background-size: cover;
   background-blend-mode: darken;
   background-position: center;
@@ -1595,7 +1592,7 @@ section {
 .footer {
   font-size: 14px;
   background-color: var(--color-secondary);
-  padding: 50px 0;
+  padding: 50px 20px;
   color: white;
 }
 
@@ -1739,7 +1736,6 @@ section {
 
 .about-subbox h1 {
   font-size: 2.3rem;
-  /* color: #4e9dd2; */
 }
 
 .about-subbox p {
@@ -1750,11 +1746,10 @@ section {
 
 .about-subbox2 h2, p {
   padding: 10px 0px;
-  /* color: #4e9dd2; */
 }
 
 .about-mainbox2 {
-  width: 100%;
+  width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -1762,8 +1757,11 @@ section {
 }
 
 .about-mainbox2 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
+
+
 
 .about-subbox2 p {
   color: rgb(112, 108, 108);
@@ -1775,6 +1773,7 @@ section {
   line-height: 1.5;
   font-weight: 600;
 }
+
 
 /* amazing section  */
 
@@ -1833,3 +1832,6 @@ section {
   font-size: 0.8rem;
   text-align: center;
 } */
+
+
+
