@@ -1703,14 +1703,15 @@ section {
 
 /* about section  */
 
+
 #about {
   width: 90vw;
   height: 90vh;
 }
 
 .about-container {
-  width: 85%;
-  height: 100%;
+  width: 110%;
+  height: 110%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1718,7 +1719,7 @@ section {
 }
 
 .about-mainbox {
-  margin: 20px;
+  margin: 60px;
 }
 
 .about-subbox2 {
@@ -1745,23 +1746,21 @@ section {
 }
 
 .about-subbox2 h2, p {
-  padding: 10px 0px;
+  padding: 0px 20px;
 }
 
 .about-mainbox2 {
-  width: 50%;
-  height: 100%;
+  width: 360%;
+  height: 140%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .about-mainbox2 img {
-  max-width: 100%;
+  width: 200%;
   height: auto;
 }
-
-
 
 .about-subbox2 p {
   color: rgb(112, 108, 108);
@@ -1833,5 +1832,98 @@ section {
   text-align: center;
 } */
 
+/* Ventana de errores*/
+.modal_wrap{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mensaje_modal{
+  background: #fff;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  width: 400px;
+  padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+  text-align: center;
+  font-family: 'Ubuntu';
+font-size: 20px;
+font-weight: 400;
+}
+
+.mensaje_modal h3:after{
+  content: '';
+display: block;
+width: 100%;
+height: 1px;
+background: #C5C5C5;
+margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+  font-size: 16px;
+  color: #606060;
+}
+
+.mensaje_modal p:before{
+  content: "\f00d";
+  font-family: FontAwesome;
+  display: inline-block;
+  color: #E25151;
+  margin-right: 8px;
+}
+
+#btnClose{
+  display: inline-block;
+padding: 3px 10px;
+margin-top: 10px;
+
+background: #E25151;
+color: #fff;
+border: 2px solid #B14141;
+cursor: pointer;
+
+float: none;
+}
+
+/* MENSAJE EXITOSO*/
+
+.mensaje-exito{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mensaje-exito h1{
+  font-size: 35px;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mensaje-exito a{
+  display: block;
+  padding: 10px 30px;
+  background: #4091EC;
+  text-decoration: none;
+  color: #fff;
+}
+
+.mensaje-exito a:hover{
+  background: #3371B6;
+}
 
 
